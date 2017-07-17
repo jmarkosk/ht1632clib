@@ -23,4 +23,4 @@ test:	test.o libht1632c.a /usr/lib/libwiringPi.so
 	gcc -std=c99 -o $@ $^
 
 %.o:	%.c
-	gcc -std=c99 -o $@ -c $^
+	gcc -std=c99 -o $@ -c -fPIC $^
